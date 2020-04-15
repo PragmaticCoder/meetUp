@@ -1,8 +1,18 @@
 <template>
   <view class="container">
-    <text class="text-color-primary">Meet Up</text>
+    <text class="text-color-primary">{{ title }}</text>
   </view>
 </template>
+
+<script>
+export default {
+  data() {
+    return {
+      title: "SHHH Confessions"
+    };
+  }
+};
+</script>
 
 <style>
 .container {
