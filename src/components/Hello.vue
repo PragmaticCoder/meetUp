@@ -1,7 +1,7 @@
 <template>
   <view>
     <text class="text-color-primary">{{ message }}</text>
-    <button :title="btnText" />
+    <button :title="btnText" :on-press="handleClick" />
   </view>
 </template>
 
@@ -12,6 +12,11 @@ export default {
       message: "Welcome to SHHH Confessions",
       btnText: "Post"
     };
+  },
+  methods: {
+    handleClick() {
+      alert("Testing Button Click");
+    }
   }
 };
 </script>
